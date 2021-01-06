@@ -1,22 +1,22 @@
 import React from "react"
-import { Link } from "gatsby"
+import 'bulma/css/bulma.css'
+import Navbar from '../components/navbar.js'
+// import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+const IndexPage = () => {
+  return(
+    <>
+    <Navbar/>
+      <section className="hero is-fullheight">
+        <div className="hero-body">
+          <div className="contaier">
+            <h1 className="subtitle">What Does Google Know?</h1>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
 
 export default IndexPage
