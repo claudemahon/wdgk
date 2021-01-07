@@ -2,12 +2,15 @@ import React from "react"
 import 'bulma/css/bulma.css'
 import Navbar from '../components/navbar.js'
 import './style.css'
-// import { Link } from "gatsby"
+import {Helmet} from "react-helmet";
 
 
 const IndexPage = () => {
   return(
     <>
+    <Helmet>
+    <script data-ad-client="ca-pub-6133065310451508" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </Helmet>
     <Navbar/>
       <section className="hero is-fullheight">
         <div className="hero-body has-text-centered">
